@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         tags = "@MainPageFeature",
         dryRun = false,
         strict = false,
-        snippets = SnippetType.CAMELCASE)
+        snippets = SnippetType.UNDERSCORE)
 
 public class RunnerCucumber {
 

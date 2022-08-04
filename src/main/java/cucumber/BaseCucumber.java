@@ -1,10 +1,13 @@
+package cucumber;
+
 import driverConfig.BROWSER;
 import driverConfig.DriverFactory;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 
-public class Base {
+public class BaseCucumber {
+
     protected static WebDriver driver;
 
     @BeforeClass
@@ -16,7 +19,4 @@ public class Base {
     public static void end(){
         driver.quit();
     }
-
-
-
 }

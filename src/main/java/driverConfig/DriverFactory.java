@@ -7,12 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static driverConfig.BROWSER.valueOf;
+
 
 public class DriverFactory {
-    public static WebDriver getDriver(String brows) {
+    public static WebDriver getDriver(BROWSER brows) {
         WebDriver driver=null;
-        BROWSER browser=valueOf(brows);
+        BROWSER browser=brows;
         switch (browser) {
             case CHROME:
                 driver = initChrome();

@@ -7,8 +7,8 @@ import pages.FormConsult;
 import pages.MainPage;
 
 public class TestMainPage extends Base{
-    private static final String MAIN_URL = "https://ithillel.ua/";
-    private static MainPage mainPage;
+    static final String MAIN_URL = "https://ithillel.ua/";
+    static MainPage mainPage;
 
     @Before
     public void openMainPage() {

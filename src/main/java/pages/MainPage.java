@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
+    @FindBy(xpath = "//p[@class=\"section-content_descriptor\"]")
+    WebElement mTitle;
     @FindBy(className = "section-content_logo")
     WebElement logoElement;
     @FindBy(id="btn-consultation-hero")
@@ -22,7 +24,9 @@ public class MainPage {
         return button.getText();
     }
 
+    public String getMTitleText() {
+        return mTitle.getText();
+    }
 
 
-    //p[@class="section-content_descriptor"]
 }
